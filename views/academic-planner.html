@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="../index.html">DC</a>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="project.html">Projects</a>
+          <a href="academic-planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="planner-box">
+        <h1>Academic Planner</h1>
+
+        <p class="lead">
+          Keep track of coursework, data science practice, and study plans. Tasks are saved in this browser.
+        </p>
+        <form id="task-form">
+          <label class="visually-hidden" for="task-input">New academic task</label>
+          <input type="text" id="task-input" placeholder="Add a new task" aria-describedby="planner-help" />
+          <button class="add-btn" type="submit">Add Task</button>
+        </form>
+        <p id="planner-help" class="muted-note">Press Add Task, then check a task when it is complete.</p>
+
+        <ul id="task-list" aria-live="polite"></ul>
+      </div>
+
+      <section class="media-section card" aria-labelledby="planner-video-heading">
+        <div>
+          <span class="eyebrow">Planner walkthrough</span>
+          <h2 id="planner-video-heading">How to use the academic planner</h2>
+          <p>This video shows how to create a task, mark it as done, and delete a task in the academic planner.</p>
+        </div>
+        <video controls preload="metadata" aria-label="Academic planner walkthrough showing how to create, complete, and delete tasks">
+          <source src="../assets/videos/academic-planner-walkthrough.mp4" type="video/mp4" />
+          Your browser does not support video playback.
+        </video>
+      </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
